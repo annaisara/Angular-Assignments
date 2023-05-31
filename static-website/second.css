@@ -44,3 +44,68 @@ padding: 10px;
     color: rgb(86,83,83);
     list-style-type: circle;
 }
+
+
+.service-box img:hover {
+
+    transform: translate(50px);
+    border: 2px solid rgb(47, 0, 255);
+
+}
+
+.service-box .features li:hover {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+
+}
+#socialmediaicon {
+
+    float: left;
+}
+
+#socialmediaicon #Twitterid {
+
+    position: absolute;
+    top: 3%;
+    left: 95%;
+
+}
+
+#socialmediaicon #Instagramid {
+
+    position: absolute;
+    top: 3%;
+    left: 90%;
+
+}
+
+
+#socialmediaicon #facebookid {
+
+    position: absolute;
+    top: 3%;
+    left: 85%;
+
+}
+
+
+#socialmediaicon #upid {
+
+    position: absolute;
+    top: 13%;
+    left: 90%;
+    visibility: visible;
+
+}
+
+#socialmediaicon #downid {
+
+    position: absolute;
+    top: 13%;
+    left: 90%;
+    visibility: hidden;
+
+}

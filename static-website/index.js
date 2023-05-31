@@ -7,7 +7,7 @@ setInterval(
     //document.getElementById("img1").src = images[Math.round(Math.random())*5]
     document.getElementById("img1").src = images[currentindex]
 }, 10000);
-
+//sara
 function changeImage(arrowType){
    // alert("fr")
   if (arrowType=="right"){

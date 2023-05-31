@@ -8,7 +8,7 @@ data = {
     },
     {
         name: "Testing Services",
-        image: "images/testing.png",
+        image: "images/testing.jpg",
         features: ["End to End Testing", "Performance Analysis","Quality Assurance","Powerful tools"]
     },
     {
@@ -30,9 +30,33 @@ for (let service of data.services){
     code+= "<div class='features'> <ul>"
     for (let feature of service.features){
 
-        code+="<li>" +feature+"</li>"
+        code+="<li onClick=Alertfunction('"+ encodeURIComponent(feature) + "')>" +feature+"</li>"
     }
     code+= "</ul></div></div>"
 }
+
+var Alertfunction = function alertmsg(msg) {
+    alert(decodeURIComponent(msg))
+}
+
+var Upclick = function Upclick() {
+
+    document.getElementById("slide-area").style.display = "none" 
+    document.getElementById("upid").style.visibility = "hidden"
+    document.getElementById("downid").style.visibility = "visible"
+    
+ 
+}
+
+var Downclick = function Downclick() {
+
+    document.getElementById("slide-area").style.display = "block" 
+    document.getElementById("downid").style.visibility = "hidden" 
+    document.getElementById("upid").style.visibility = "visible"
+    
+ 
+}
+
+
 
 document.getElementById("services-wrapper").innerHTML =code
