@@ -1,0 +1,26 @@
+
+<div id ="main">
+  <div id="sitelogo" style="background-color: white;">
+    <img src="http://localhost:8081/sitelogo.png" width="100px" height="40px"/>
+   </div>
+  <div id="menubar">
+    <app-menubar></app-menubar>
+  </div>
+  <div id="header">
+    <app-headerbox></app-headerbox>
+  </div>
+  <div id="services">
+    <app-services *ngFor="let x of services"[boxtitle]="x"></app-services>
+</div>
+
+  <div id="content">
+    <app-contentbox></app-contentbox>
+  </div>
+  <div style="font-size: medium;text-align:center">Gallery</div>
+  <div id="gallery">
+    <app-gallerybox  *ngFor="let y of gallery;let id=index" [boxtheme]="themeStyles[id]"></app-gallerybox>
+   </div>
+  <div id="footer">
+    <app-footerbox ></app-footerbox>
+  </div>
+</div>

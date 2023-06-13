@@ -1,0 +1,49 @@
+#main {
+    background-color: rgb(236, 229, 229);
+    }
+    #site{
+    
+        padding-left: 10px;
+    }
+    
+    #menubar {
+    
+        height: 25px;
+        background-color: black;
+        color: whitesmoke;
+    }
+    
+    #header {
+        margin-top: 10px;
+        padding-top: 40px;
+        height: 90px;
+        text-align: center;
+        color: whitesmoke;
+        background-color:#a7c449;
+    }
+    
+    #services {
+    
+        height: 100px;
+      
+    }
+    
+    
+    
+    #content {
+    
+        height: 140px;
+   
+    }
+    #gallery {
+    
+        height: 65px;
+
+    }
+    #footer {
+    
+        height: 25px;
+         color: black;
+        margin-top: 15px;
+    
+    }
