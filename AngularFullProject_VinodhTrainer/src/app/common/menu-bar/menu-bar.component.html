@@ -1,0 +1,14 @@
+<mat-toolbar id="menu">
+    <span class="title"> ABC Inc</span>
+    <ul>
+        <li> <a routerLink="/"> Home </a></li>
+        <li> <a routerLink="/projects"> Projects </a></li>
+        <li> <a routerLink="/reviews"> Reviews </a></li>
+        <li> <a routerLink="/contacts"> Contacts </a></li>
+        <li> <a routerLink="/admin/home" *ngIf="loginStatus"> Admin </a></li>
+    </ul>
+    <ul class="login">
+        <li> <a (click)="login()"> {{loginMessage}}  </a></li>
+    </ul>
+    
+</mat-toolbar>
